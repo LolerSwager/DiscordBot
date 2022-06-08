@@ -25,13 +25,18 @@ client.on("messageCreate", (message) => {
     }
 })
 
+const UserArr = "218717194421403648"
+
 client.on("messageCreate", (message) => {
-    if (message.content.includes("https://discord.com/invite/")){
-        
-        message.delete()
-        .then(message => console.log(`${message.author.username} You dont have Permission to Send Discord invites ${message}`))
-        .then(message.guild.channels.cache.get(message.channelId).send(`${message.author.username} You dont have Permission to Send Discord invites`))
-        .catch(console.error)
+    if (message.author.id != UserArr){
+        if (message.content.includes("https://discord.com/invite/")){
+            message.delete()
+            .then(message => console.log(`${message.author.username} You dont have Permission to Send Discord invites ${message}`))
+            .then(message.guild.channels.cache.get(message.channelId).send(`${message.author.username} You dont have Permission to Send Discord invites`))
+            .catch(console.error)
+        }
+    }else{
+        message.react('✅')
     }
 })
 
