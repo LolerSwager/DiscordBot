@@ -1,15 +1,18 @@
 {
   "name": "discordbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Discord bot for integration with website backend. Chat & Rolle Administration",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "nodemon start": "nodemon index.js"
   },
   "author": "Jannick Nielsen",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^13.8.0",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16"
   }
 }
