@@ -1,6 +1,9 @@
 import Discord, { Application } from 'discord.js';
 import 'dotenv/config';
 import nodeConsole from './components/nodeConsole.js';
+import nodeExit from './components/nodeExit.js';
+
+nodeExit()
 
 const client = new Discord.Client({
     intents: [
