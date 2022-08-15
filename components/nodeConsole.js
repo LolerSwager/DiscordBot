@@ -3,7 +3,9 @@ import nodeLogger from "./nodeLogger.js"
 import fs from "fs"
 
 export default function nodeConsole(consoleColor, subject, text1){
-    
+
+  nodeLogger('ConsoleLog', `[${timeDate()}] [${subject.toUpperCase()}] - ${text1}`);
+
     switch(consoleColor) {
         case "ok":
             consoleColor = "\x1b[32m"
@@ -26,9 +28,5 @@ export default function nodeConsole(consoleColor, subject, text1){
         default:
             consoleColor = "\x1b[38m"
       }
-
-      nodeLogger('ConsoleLog', `[${timeDate()}] [${subject.toUpperCase()}] - ${text1}`);
-
     return(console.log(`${consoleColor}[${timeDate()}] [${subject.toUpperCase()}] - ${text1} \x1b[0m`))
-    
 }
