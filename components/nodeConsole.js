@@ -1,10 +1,10 @@
 import timeDate from "./cal_time.js"
-import nodeLogger from "./nodeLogger.js"
-import fs from "fs"
+/* import nodeLogger from "./nodeLogger.js"
+import fs from "fs" */
 
 export default function nodeConsole(consoleColor, subject, text1){
 
-  nodeLogger('ConsoleLog', `[${timeDate()}] [${subject.toUpperCase()}] - ${text1}`);
+ /*  nodeLogger('ConsoleLog', `[${timeDate()}] [${subject.toUpperCase()}] - ${text1}`); */
 
     switch(consoleColor) {
         case "ok":
