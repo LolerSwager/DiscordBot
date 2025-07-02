@@ -1,0 +1,20 @@
+{
+  "name": "sdk-bot",
+  "version": "1.0.0",
+  "description": "link between website and discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "jannick nielsen",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.20.0",
+    "dotenv": "^16.5.0",
+    "nodemon": "^3.1.10",
+    "uuidv7": "^1.0.2"
+  }
+}
