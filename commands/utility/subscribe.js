@@ -22,8 +22,6 @@ module.exports = {
         .addChoices(
           { name: "news", value: "news" },
           { name: "updates", value: "updates" },
-          { name: "dota [omgks]", value: "[omgks]" },
-          { name: "tarkov", value: "Tarkov Guild" },
           { name: "tarkov-news", value: "eft-news" },
           { name: "arma-refriger-wcs-news", value: "arma-news" },
           { name: "project-zomboid-news", value: "pz-news" },
